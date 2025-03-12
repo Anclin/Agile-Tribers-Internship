@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Webpage Layout</title>
+    <style>
+        /* Reset default margins and paddings */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, sans-serif;
+        }
+
+        /* Header (Navigation Bar) */
+        .header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background-color: #333;
+            padding: 15px 20px;
+            color: white;
+            box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+        }
+
+        .logo {
+            font-size: 24px;
+            font-weight: bold;
+        }
+
+        .nav-links {
+            display: flex;
+            list-style: none;
+        }
+
+        .nav-links li {
+            margin: 0 15px;
+        }
+
+        .nav-links a {
+            text-decoration: none;
+            color: white;
+            font-size: 18px;
+            padding: 8px 12px;
+            transition: background 0.3s;
+            border-radius: 5px;
+        }
+
+        .nav-links a:hover {
+            background-color: #555;
+        }
+
+        /* Main Container */
+        .container {
+            display: flex;
+            flex-direction: row;
+            min-height: 80vh;
+        }
+
+        /* Left Panel (Sidebar) */
+        .left-panel {
+            width: 250px;
+            background-color: #222;
+            color: white;
+            padding: 20px;
+            min-height: 100%;
+        }
+
+        .left-panel h2 {
+            margin-bottom: 15px;
+        }
+
+        .left-panel ul {
+            list-style: none;
+        }
+
+        .left-panel ul li {
+            margin: 10px 0;
+        }
+
+        .left-panel ul li a {
+            text-decoration: none;
+            color: white;
+            display: block;
+            padding: 8px;
+            border-radius: 5px;
+            transition: background 0.3s;
+        }
+
+        .left-panel ul li a:hover {
+            background-color: #444;
+        }
+
+        /* Main Content */
+        .main-content {
+            flex: 1;
+            padding: 40px;
+            background-color: #f4f4f4;
+        }
+
+        .main-content h1 {
+            font-size: 28px;
+            margin-bottom: 15px;
+        }
+
+        /* Footer */
+        .footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 15px;
+            margin-top: 20px;
+        }
+
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            .header {
+                flex-direction: column;
+                text-align: center;
+            }
+
+            .nav-links {
+                flex-direction: column;
+                padding-top: 10px;
+            }
+
+            .nav-links li {
+                margin: 5px 0;
+            }
+
+            .container {
+                flex-direction: column;
+            }
+
+            .left-panel {
+                width: 100%;
+                text-align: center;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Header (Navigation Bar) -->
+    <header class="header">
+        <div class="logo">MyWebsite</div>
+        <ul class="nav-links">
+            <li><a href="#">Home</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Services</a></li>
+            <li><a href="#">Contact</a></li>
+        </ul>
+    </header>
+
+    <!-- Main Layout -->
+    <div class="container">
+        
+        <!-- Left Panel (Sidebar) -->
+        <aside class="left-panel">
+            <h2>Sidebar Menu</h2>
+            <ul>
+                <li><a href="#">Dashboard</a></li>
+                <li><a href="#">Profile</a></li>
+                <li><a href="#">Settings</a></li>
+                <li><a href="#">Logout</a></li>
+            </ul>
+        </aside>
+
+        <!-- Main Content -->
+        <main class="main-content">
+            <h1>Welcome to My Website</h1>
+            <p>This is a simple webpage layout with a header, left panel, main content, and footer. Customize it as needed!</p>
+        </main>
+    </div>
+
+    <!-- Footer -->
+    <footer class="footer">
+        &copy; 2025 MyWebsite. All rights reserved.
+    </footer>
+
+</body>
+</html>

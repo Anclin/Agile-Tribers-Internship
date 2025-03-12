@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Modern Webpage Layout</title>
+    <style>
+        /* Reset Styles */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, sans-serif;
+        }
+
+        /* Header (Navigation Bar) */
+        .header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background-color: #333;
+            padding: 15px 20px;
+            color: white;
+            box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+        }
+
+        .logo {
+            font-size: 24px;
+            font-weight: bold;
+        }
+
+        .nav-links {
+            display: flex;
+            list-style: none;
+        }
+
+        .nav-links li {
+            margin: 0 15px;
+        }
+
+        .nav-links a {
+            text-decoration: none;
+            color: white;
+            font-size: 18px;
+            padding: 8px 12px;
+            transition: background 0.3s;
+            border-radius: 5px;
+        }
+
+        .nav-links a:hover {
+            background-color: #555;
+        }
+
+        /* TNT Copy (Tagline/Intro) */
+        .tnt-copy {
+            text-align: center;
+            padding: 50px 20px;
+            font-size: 22px;
+            font-weight: bold;
+            background-color: #f4f4f4;
+        }
+
+        /* Hero Section */
+        .hero {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+            text-align: center;
+            padding: 60px 20px;
+            background: url('https://source.unsplash.com/1600x900/?technology,nature') no-repeat center center/cover;
+            color: white;
+        }
+
+        .hero h1 {
+            font-size: 36px;
+            margin-bottom: 20px;
+        }
+
+        .hero p {
+            font-size: 18px;
+            margin-bottom: 20px;
+        }
+
+        .hero .btn {
+            background-color: #ff5722;
+            color: white;
+            padding: 12px 20px;
+            font-size: 18px;
+            text-decoration: none;
+            border-radius: 5px;
+            transition: background 0.3s;
+        }
+
+        .hero .btn:hover {
+            background-color: #e64a19;
+        }
+
+        /* Features Section */
+        .features {
+            display: flex;
+            justify-content: space-around;
+            flex-wrap: wrap;
+            padding: 50px 20px;
+            background-color: white;
+        }
+
+        .feature-box {
+            width: 30%;
+            text-align: center;
+            padding: 20px;
+            box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+            border-radius: 10px;
+            margin: 15px;
+            background-color: #f9f9f9;
+        }
+
+        /* More Copy Section */
+        .more-copy {
+            text-align: center;
+            padding: 50px 20px;
+            background-color: #f4f4f4;
+            font-size: 20px;
+        }
+
+        /* Call to Action */
+        .cta {
+            text-align: center;
+            padding: 50px 20px;
+            background-color: #ff5722;
+            color: white;
+        }
+
+        .cta .btn {
+            background-color: white;
+            color: #ff5722;
+            padding: 12px 20px;
+            font-size: 18px;
+            text-decoration: none;
+            border-radius: 5px;
+            transition: background 0.3s;
+        }
+
+        .cta .btn:hover {
+            background-color: #e64a19;
+            color: white;
+        }
+
+        /* Footer */
+        .footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 20px;
+            margin-top: 30px;
+            font-size: 16px;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Header -->
+    <header class="header">
+        <div class="logo">My Website</div>
+        <ul class="nav-links">
+            <li><a href="#">Home</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Services</a></li>
+            <li><a href="#">Contact</a></li>
+        </ul>
+    </header>
+
+    <!-- TNT Copy (Tagline/Intro) -->
+    <section class="tnt-copy">
+        <p>Welcome to Our Amazing Website - Bringing You the Best Experience!</p>
+    </section>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <h1>Your Perfect Solution Awaits</h1>
+        <p>Join us and explore endless possibilities.</p>
+        <a href="#" class="btn">Get Started</a>
+    </section>
+
+    <!-- Features Section -->
+    <section class="features">
+        <div class="feature-box">
+            <h2>Feature One</h2>
+            <p>Experience the best with our services.</p>
+        </div>
+        <div class="feature-box">
+            <h2>Feature Two</h2>
+            <p>Reliable and efficient solutions.</p>
+        </div>
+        <div class="feature-box">
+            <h2>Feature Three</h2>
+            <p>Top-notch quality and support.</p>
+        </div>
+    </section>
+
+    <!-- More Copy -->
+    <section class="more-copy">
+        <p>We offer innovative solutions tailored to your needs.</p>
+    </section>
+
+    <!-- Final Call to Action -->
+    <section class="cta">
+        <h2>Join Us Today!</h2>
+        <p>Get started and experience the best services available.</p>
+        <a href="#" class="btn">Sign Up Now</a>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <p>&copy; 2025 Your Company | All Rights Reserved</p>
+    </footer>
+
+</body>
+</html>

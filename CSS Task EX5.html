@@ -1,0 +1,76 @@
+Ex: 5 create a responsive version of the layout shown
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Layout</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background-color: grey;
+        }
+
+        .container {
+            display: grid;
+            grid-template-areas:
+                "header header"
+                "nav nav"
+                "sidebar content"
+                "footer footer";
+            grid-template-columns: 25% 75%; /* Sidebar takes 25%, content 75% */
+            grid-template-rows: auto;
+            width: 90%;
+            max-width: 1200px;
+            margin: auto;
+            gap: 10px;
+            background-color: white;
+            padding: 10px;
+            border-radius: 10px;
+        }
+
+        header { grid-area: header; padding: 20px; background: #333; color: white; text-align: center; }
+        nav { grid-area: nav; padding: 15px; background: #555; color: white; text-align: center; }
+        .sidebar { grid-area: sidebar; padding: 15px; background: lightgray; text-align: center; font-weight: bold; }
+        .content { grid-area: content; padding: 15px; background: white; text-align: center; }
+        footer { grid-area: footer; padding: 15px; background: #333; color: white; text-align: center; }
+
+        /* Apply border for visibility */
+        .container > * {
+            border: 2px solid black;
+        }
+
+        /* Responsive Design for Mobile */
+        @media (max-width: 768px) {
+            .container {
+                grid-template-areas:
+                    "header"
+                    "nav"
+                    "sidebar"
+                    "content"
+                    "footer";
+                grid-template-columns: 1fr; /* Stack elements in a single column */
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <header>Header</header>
+        <nav>Navigation Bar</nav>
+        <div class="sidebar">Index</div>
+        <div class="content">Content Section</div>
+        <footer>Footer</footer>
+    </div>
+
+</body>
+</html>

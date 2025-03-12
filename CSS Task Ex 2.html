@@ -1,0 +1,65 @@
+EX.2 Reproduce the text styling in the image
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Layout Example</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+
+        .container {
+            width: 80%;
+            margin: auto;
+            border: 2px solid black;
+        }
+
+        .header, .nav, .footer {
+            text-align: center;
+            font-weight: bold;
+            padding: 10px;
+            border-bottom: 2px solid black;
+        }
+
+        .footer {
+            border-top: 2px solid black;
+        }
+
+        .content-wrapper {
+            display: flex;
+            height: 300px; /* Adjust height as needed */
+        }
+
+        .sidebar {
+            width: 20%;
+            border-right: 2px solid black;
+            text-align: center;
+            font-weight: bold;
+            padding: 10px;
+        }
+
+        .content {
+            flex: 1;
+            padding: 10px;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <div class="header">Header Section</div>
+        <div class="nav">Navigation Bar</div>
+        <div class="content-wrapper">
+            <div class="sidebar">Index</div>
+            <div class="content">Content section</div>
+        </div>
+        <div class="footer">Footer Section</div>
+    </div>
+
+</body>
+</html>
