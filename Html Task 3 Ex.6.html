@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Blog</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        header {
+            width: 100%;
+            background-color: #333;
+            color: white;
+            padding: 15px 0;
+            text-align: center;
+        }
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin: 0 15px;
+        }
+        .container {
+            display: flex;
+            width: 80%;
+            margin-top: 20px;
+        }
+        .content {
+            flex: 2;
+            padding: 20px;
+        }
+        .sidebar {
+            flex: 1;
+            padding: 20px;
+            background-color: #f4f4f4;
+        }
+        .blog-post {
+            border-bottom: 1px solid #ccc;
+            padding-bottom: 15px;
+            margin-bottom: 15px;
+        }
+        .featured-image {
+            width: 100%;
+            height: auto;
+        }
+        ul {
+            list-style: none;
+            padding: 0;
+        }
+        ul li {
+            margin-bottom: 10px;
+        }
+        ul li a {
+            text-decoration: none;
+            color: #333;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>My Blog</h1>
+    <nav>
+        <a href="#">Home</a>
+        <a href="#">About</a>
+        <a href="#">Contact</a>
+    </nav>
+</header>
+
+<img src="C:\Users\HP 348 G3\Pictures\blog
+.jpg" alt="Featured Blog Image" class="featured-image">
+
+<div class="container">
+    <section class="content">
+        <article class="blog-post">
+            <h2>Blog Post Title 1</h2>
+            <p><strong>Author:</strong> John Doe</p>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam sit amet...</p>
+        </article>
+
+        <article class="blog-post">
+            <h2>Blog Post Title 2</h2>
+            <p><strong>Author:</strong> Jane Smith</p>
+            <p>Curabitur aliquet quam id dui posuere blandit. Vivamus suscipit tortor eget...</p>
+        </article>
+    </section>
+
+    <aside class="sidebar">
+        <h2>Useful Links</h2>
+        <ul>
+            <li><a href="#">Latest Articles</a></li>
+            <li><a href="#">Popular Posts</a></li>
+            <li><a href="#">Categories</a></li>
+            <li><a href="#">Archives</a></li>
+        </ul>
+    </aside>
+</div>
+
+</body>
+</html>
